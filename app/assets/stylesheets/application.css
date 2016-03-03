@@ -544,3 +544,5 @@ a img{
         display: none;
     }
 }
+
+hr.separator {margin-top: 5em;}

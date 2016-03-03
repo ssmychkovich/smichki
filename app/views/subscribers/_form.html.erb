@@ -1,0 +1,6 @@
+<%= form_for :subscriber, :url => subscribers_path do |f| %>
+    <%= f.label :email %>:
+    <%= f.text_field :email %>
+
+    <%= f.submit 'Submit', :class => 'md-button'%>
+<% end %>
