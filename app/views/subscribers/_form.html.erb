@@ -1,5 +1,5 @@
 <%= form_for :subscriber, :url => subscribers_path do |f| %>
-    <%= f.label :email %>:
+    <%= f.label :email, :style => "background-color: gray;color:white;opacity:0.8;padding:0.5em;" %>:
     <%= f.text_field :email %>
 
     <%= f.submit 'Submit', :class => 'md-button'%>
