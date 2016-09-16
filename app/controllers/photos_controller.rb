@@ -1,11 +1,11 @@
 class PhotosController < ApplicationController
   def index
-    @photos = %w(DSC_8784_600.JPG DSC_8790_600.JPG
-    DSC_8803_600.JPG
-    DSC_8813_600.JPG
-    DSC_8852_600.JPG
-    verdi2_600.jpg
-    verdi3_600.jpg
-    verdi_600.jpg)
+    @photos = %w(
+      smichki-sergei-masquarade-2015.PNG
+      smichki-gylya-masquarade-2016-2.PNG
+      smichki-sannikoff-nogy-svelo-2015.jpg
+      smichki-sannikov-masquarade-rock-and-roll.JPG
+      smichki-sergei-boris-2014.png
+    )
   end
 end

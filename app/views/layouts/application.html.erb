@@ -22,11 +22,16 @@
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-  <div class="android-header mdl-layout__header mdl-layout__header--waterfall" style="background-image: url('/images/background.png');">
+  <div class="mdl-layout__header " style="background-image: url('/images/background.png');">
     <div class="mdl-layout__header-row">
-          <span class="android-title mdl-layout-title mdl-typography--font-light">
-            <%= link_to 'Лазарные Смычки /|\ Lazanie Smichki', welcome_index_path, :style => "color:white;text-decoration:none;" %>
+          <span class="mdl-layout-title mdl-typography--font-light">
+            <%= link_to 'Смычки | Smichki', welcome_index_path, :style => "color:white;text-decoration:none;font-size:2em;" %>
           </span>
+      <div style="position: absolute;left:6em;top:3em;">
+        <div style="display: inline-block;margin-right: 3em;">русский рок, aтланта</div>
+        <div style="display: inline-block;">russian rock, atlanta</div>
+      </div>
+
       <!-- Add spacer, to align navigation to the right in desktop -->
       <div class="android-header-spacer mdl-layout-spacer"></div>
       <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
@@ -38,8 +43,8 @@
         </div>
       </div>
       <!-- Navigation -->
-      <div class="android-navigation-container">
-        <nav class="android-navigation mdl-navigation">
+      <div class="">
+        <nav class="mdl-navigation">
           <%= link_to 'Home', welcome_index_path, :class => 'mdl-navigation__link mdl-typography--text-uppercase' %>
           <%= link_to 'Photos', photos_index_path, :class => 'mdl-navigation__link mdl-typography--text-uppercase'  %>
           <%= link_to 'Videos', videos_index_path, :class => 'mdl-navigation__link mdl-typography--text-uppercase'  %>
